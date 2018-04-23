@@ -1,0 +1,22 @@
+{
+    "name": "template",
+    "version": "1.0.0",
+    "description": "A template for INM320",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrent \"npm run sass\" \"npm run lite\"",
+        "lite": "lite-server",
+        "sass": "node-sass --watch --output-style compressed -o dist/css src/scss"
+    },
+    "author": "Vinicius Philot",
+    "license": "ISC",
+    "dependencies": {
+        "jquery": "^3.2.1",
+        "particles.js": "^2.0.0"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.1",
+        "lite-server": "^2.3.0",
+        "node-sass": "^4.7.2"
+    }
+}

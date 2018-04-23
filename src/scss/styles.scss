@@ -1,0 +1,591 @@
+/*
+Vinicius Philot
+133-762-161
+for Christopher Lewis
+INM320SCC
+Jan 5, 2018
+Mobile Event Site
+*/
+
+/* I tried to use BEM convention http://getbem.com/introduction/ but I did not succeed this time. I'll keep trying though*/
+
+@import url('https://fonts.googleapis.com/css?family=Archivo:700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,700');
+
+@import "mixins";
+
+$font-feat: 'Archivo', sans-serif;
+$font-all: 'Josefin Sans',sans-serif;
+
+$highlight-color: #9CAFB7;
+$contrast-color: white;
+$background-color: black;
+
+
+$header: 2em;
+$title: 1.3em;
+$subtitle: 1em;
+$body: 0.95em;
+$else: 0.7em;
+
+
+$default-spacing: 2em;
+
+$bp-sm: 414px;
+$bp-tb: 940px;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-all;
+    @include size(100vw,
+    100vh);
+    background-color: $background-color;
+    color: $contrast-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+section {
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    z-index: -1;
+    left: -100vw;
+    @include transition(left, 0.5s, 0.5s);
+    background-color: $background-color;
+    &.active {
+        left: 0vw;
+        z-index: 1;
+        @include transition(left, 0.5s, 0.0s);
+    }
+}
+/*resetting all the buttons by https://codepen.io/terkel/pen/dvejH?q=reset+button&limit=all&type=type-pens*/
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    cursor: pointer;
+}
+/* ----------- NAV ------------- */
+
+nav#main-nav {
+    @include posFixedBottom();
+    border-top: 1px solid $contrast-color;
+    background-color: $background-color;
+    & a {
+        width: 100/3 * 1vw;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 8vh;
+        text-decoration: none;
+        color: $contrast-color;
+        font-size: $else ;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        @include transition(color, 1s, 0s);
+        @include transition(background-color, 1s, 0s);
+    }
+    & a.active {
+        font-weight: 900;
+        color: $background-color;
+        background-color: $contrast-color;
+    }
+}
+
+
+/* ----------- HOME ------------- */
+
+#home {
+    & div.logo-wrapper {
+        position: absolute;
+        padding: $default-spacing;
+    }
+    & div#logo-primary,
+    div#logo-secondary {
+        @include size(40vw,
+        40vw);
+        /*keeps the same*/
+        background-size: cover;
+        background-color: rgba(100, 100, 100, 0.3);
+    }
+    & div#logo-primary {
+        background-image: url("../../images/sonar-d-logo-left.png");
+    }
+    & div#logo-secondary {
+        margin-top: 2em;
+        background-image: url("../../images/sonar-d-logo-right.png");
+    }
+
+    & > #header {
+        color: $contrast-color;
+        position: absolute;
+        bottom: 10vh;
+        padding: $default-spacing;
+
+        & > h1 {
+            font-weight: 300;
+            font-size: $title;
+            @include paddingVert(1.2em);
+        }
+
+        & > h2 {
+            font-weight: 300;
+            font-size: $title*0.8;
+            line-height: 1.5em;
+        }
+    }
+
+    & > #particles-js {
+        @include size(100vw,
+        100vh);
+        background-color: black;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ----------- SCHEDULE & SPEAKERS ------------- */
+
+div.btn-wrapper {
+    padding: $default-spacing $default-spacing 0 $default-spacing;
+    
+    & > .btn-day, & > .btn-filter{
+    font-size: $subtitle;
+    padding: 0.5em;
+    margin: 0 1em 0.5em 0em;
+    display: inline-block;
+    }
+    
+    & > .btn-day {
+    text-transform: uppercase;
+    }
+    
+    & > .btn-day.active, & > .btn-filter.active {
+    text-decoration: underline;
+    }
+    
+    & svg {
+        padding-right:5px;
+    }
+}
+
+div.talks-wrapper {
+    padding: 0 $default-spacing 0 $default-spacing;
+    margin-bottom: 10vh;
+    
+    & > p.error {
+        margin-top: $default-spacing;
+        width: 70vw;
+        font-size: $body*1.5;
+    }
+}
+
+div.talk {
+    
+    color: $contrast-color;
+    @include paddingVert(1em);
+    position: relative;
+    opacity: 0;
+    margin-top: 5vh;
+    @include transition(all, 0.5s, 0s);
+    
+    & > h1 {
+        font-weight: 900;
+        font-size: $title*1.25;
+        letter-spacing: 0.05em;
+        @include paddingVert(0.2em);
+        font-family: $font-feat;
+    }
+    & > h2 {
+        font-weight: 300;
+        font-size: $subtitle;
+        left: 0;
+    }
+    & > h5 {
+        font-weight: 300;
+        font-size: $else;
+        position: absolute;
+        right: 0;
+    }
+    & > h5.day {
+        bottom: 10%;
+    }
+    & > h5.time {
+        bottom: 0;
+    }
+    & > p {
+        display: none;
+    }
+    
+    & > img {
+        display: none;
+    }
+    
+    &::before { /*creating the border */
+        content: "";
+        border-bottom: 0.03em solid $contrast-color;
+        position: absolute;
+        width: 52vw;
+        bottom: 0;
+    }
+}
+
+/*looping through the items to add a delay*/
+
+    @for $i from 1 through 18 {
+        #schedule.active div.talk:nth-of-type(#{$i}){
+            opacity: 1;
+            margin-top: 0vh;
+            transition-delay: 0.15s * $i;
+        }
+    }
+
+
+
+button.btn-attending {
+        background-color: $background-color;
+        color: $contrast-color;
+        width: 10em;
+        @include marginVert(1em);
+        border: 1px solid $contrast-color;
+        font-size: $body*0.65;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        padding: 1em;
+        @include transition(all, 0.5s, 0s);
+    }
+
+button.btn-attending.true {
+        border: 1px solid $background-color;
+        background-color: $contrast-color;
+        color: $background-color;
+        border-radius: 5em;
+        margin-left: 2em;
+    }
+
+button.btn-print {
+    /* LOVING this extend function */
+    @extend button.btn-attending;
+    width: 100%;
+    margin-top: 2em;
+}
+
+div.talk-detail, div.speaker-detail{
+    width: 100vw;
+    z-index: 1;
+    padding: $default-spacing;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    color: $background-color;
+    background-color: $contrast-color;
+    min-height: 100%;
+    display: none;
+    overflow: scroll;
+    @include prefix(animation, pop-detail .5s ease-in-out);
+    
+    &.active {
+        display: block;
+    }
+    
+    & > *{
+        margin-bottom: 0.5em;
+    }
+    
+    & > h1 {
+        width: 60vw;
+        font-weight: 900;
+        font-size: $header*1.2;
+        letter-spacing: -0.02em;
+        @include paddingVert(0.2em);
+        font-family: $font-feat;
+        position: absolute;
+        top: 1em;
+        left: 1.3em;
+        color: $contrast-color;
+        @include prefix (text-shadow, 8px 0 3em rgba(0, 0, 0, 1));
+    }
+    
+    & > h2 {
+        padding-top: 0.5em;
+        font-weight: 700;
+        font-size: $title;
+        left: 0;
+    }
+    & > h5 {
+        font-weight: 300;
+        font-size: $title*0.8;
+        display: inline-block;
+        padding-right: 1em;
+    }
+    & > p {
+        line-height: 1.3em;
+        display: block;
+        font-size: $body;
+        text-align: justify;
+    }
+    
+    & > img {
+        @include size (100%,70vh);
+        display: block;
+        border-radius: 1em;
+        object-fit: cover;
+        @include prefix (filter, brightness(90%));
+    } 
+    
+    & > button.btn-talk-back {
+        color: $contrast-color;
+        position: absolute;
+        top: 10vh;
+        @include prefix(transform, translateY(-50%));
+/*       @include prefix (text-shadow, 8px 0 3em rgba(0, 0, 0, 1));
+         shadow does not work with svgs from font awesome*/
+        right: 15%;
+        font-size: $title*1.5;
+    }   
+}
+
+@keyframes pop-detail {
+  0% {
+    opacity: 0;
+  }  
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* ----------- SPEAKERS ------------- */
+#speakers {
+    margin-bottom: 10vh;
+    padding: $default-spacing;
+    box-sizing: border-box;
+}
+
+div.speaker {
+    display: inline-block;
+    opacity: 0;
+    margin-top: 2vh;
+    @include transition(all, 0.3s, 0s)
+    & h1 {
+        font-weight: 900;
+        font-size: $header;
+        letter-spacing: -0.02em;
+        font-family: $font-feat;
+        margin: .1em 0 .1em 0;
+
+    }
+
+    &:nth-child(odd) > h1 {
+        opacity: 0.7;
+        /*change opacity of odd elements to give variety*/
+    }    &:nth-child(3n) > h1 {
+        font-size: $header*1.3;
+        /*change opacity of odd elements to give variety*/
+    }
+    
+    &:first-child > h1 {
+        font-size: $header*2.5;
+    }
+}
+
+    @for $i from 1 through 18 {
+        #speakers.active div.speaker:nth-of-type(#{$i}){
+            opacity: 1;
+            margin-top: 0vh;
+            transition-delay: 0.15s * $i/2;
+        }
+    }
+
+.speaker > h2,
+.speaker > h5,
+.speaker > p,
+.speaker > button,
+.speaker > img {
+    display: none;
+}
+
+/* TABLET-SPECIFIC BREAKPOINT*/
+
+@media only screen and (min-width: $bp-sm) and (max-width: $bp-tb)  {
+       
+    nav#main-nav {
+        & a {
+            line-height: 6vh;
+            font-size: $body;
+        }
+    }
+    
+    #home {
+        & div.logo-wrapper {
+            position: inherit;
+        }
+        & div#logo-primary,
+        div#logo-secondary {
+            @include size(30vw,30vw);
+            display: inline-block;
+            margin-right: $default-spacing;
+        }
+        & div#logo-secondary {
+            margin-top: 0em;
+        }
+
+        & > #header {
+            & > h1 {
+                width: 50vw;
+                font-size: $header*1.3;
+            }
+            & > h2 {
+                display: inline-block;
+                font-size: $title*1.3;
+            }
+            & > h2:first-of-type::after {
+                content: "|";
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+        }
+    }
+    div.btn-wrapper {
+        
+        & > .btn-day, & > .btn-filter{
+        font-size: $subtitle*1.15;
+        padding: 0.8em;
+        border: 0.03em solid $contrast-color;
+        }
+    }
+
+    div.talk {
+        @include paddingVert(1.5em);
+        & > h1 {
+            width: 60vw;
+            font-size: $title*1.5;
+            margin-bottom: 0.5em;
+        }
+        & > h2 {
+            font-size: $subtitle*1.5;
+            margin-right: 1em;
+            font-weight: 700;
+
+            display: inline-block;
+        }
+        & > h5 {
+            display: inline-block;
+            margin-right: 1em;
+            font-size: $body*1.25;
+            position: relative;
+            right: 0;
+        }
+        &::before { /*creating the border */
+            width: 90vw;
+        }
+    }
+
+    button.btn-attending {
+            color: $contrast-color;
+            width: 15em;
+            @include marginVert(1em);
+            font-size: $body*0.85;
+            font-weight: 900;
+            letter-spacing: 0.5em;
+            padding: 1em;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(0,50%)
+        }
+
+    button.btn-print {
+        width: 60%;
+        margin-top: 2em;
+        position: relative;
+    }
+
+    div.talk-detail, div.speaker-detail{
+       
+
+        & > h1 {
+            font-size: $header*2;
+        }
+
+        & > h2 {
+            font-size: $title*1.2;
+            margin-bottom: 0.35em;
+            
+        }
+        & > h5 {
+            font-size: $title;
+            margin-bottom: 0;
+        }
+        & > p {
+            text-align: left;
+            line-height: 1.2em;
+            font-size: $body*1.5;
+            margin-top: 2em;
+        }
+
+        & > img {
+            @include size (100%,50vh);
+
+        } 
+
+        & > button.btn-talk-back {
+            top: 10vh;
+            font-size: $title*2;
+        }
+        
+        & > button.btn-attending {
+            position: relative;
+            display: block;
+            transform: translate(0,50%)
+        }
+    }
+    
+    
+    div.speaker {
+    display: inline-block;
+        & h1 {
+            font-size: $header*1.8;
+            letter-spacing: -0.02em;
+            margin: .1em 0.3em .1em 0;
+        }
+
+        &:nth-child(odd) > h1 {
+            opacity: 0.7;
+            /*change opacity of odd elements to give variety*/
+        }    &:nth-child(3n) > h1 {
+            font-size: $header*1.3;
+            /*change opacity of odd elements to give variety*/
+        }
+
+        &:first-child > h1 {
+            font-size: $header*2.5;
+        }
+    }
+}
+
+
+
+

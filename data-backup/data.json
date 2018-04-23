@@ -1,0 +1,203 @@
+{
+    "talks": [
+        {
+            "title": "Björk's Talk",
+            "speaker": "Björk",
+            "talkImg": "",
+            "description": "A conversation in which Björk will talk about her close ties to the audio-visual world all throughout her career. From her record covers, to her iconic and innovative videoclips, directed by some of the most important filmmakers from the last decades, or Biophilia, the app for mobile platforms in which the tracks of her album were turned into interactive songs, and most recently her incursion into virtual reality.",
+            "start": "2018-02-09T16:10:00.000Z",
+            "end": "2018-02-09T17:00:00.000Z",
+            "bio": "In flesh and bones or in zeroes and ones, Björk always remains Björk, and transformation is part of her nature.It is difficult to summarize Björk’s career in a few lines – it is a long one (she released her first album when she was 12 in 1977) and spans all kinds of sounds, styles and collaborations. Singer, composer, producer and, currently, DJ, Björk’s imprint on the culture of the last 25 years goes beyond music and expands towards the audiovisual and technological worlds.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Coding + Creativity",
+            "speaker": "Ayah Bdeir",
+            "talkImg": "",
+            "description": "littleBits is a kit of open source electronic modules (engines, oscillators, batteries, even IoT modules) snapped together with magnets –forget your welder!– to easily create complex systems. littleBits is a platform focused on education used by hundreds of schools to teach electronics, and it is also one of the favourite tools of designers, makers and inventors. Their founder Ayah Bdeir will talk about how the system can help creatives get into coding.",
+            "start": "2018-02-09T17:10:00.000Z",
+            "end": "2018-02-09T18:00:00.000Z",
+            "bio": "Ayah Bdeir is an engineer, interaction artist, free hardware advocate and, most of all, a distinguished creative entrepreneur. Ever since Bdeir founded her company littleBits, her name has been making the top lists for most creative people in the world. Bdeir received her Master’s degree in Computing Culture from the MIT after graduating from the American University of Beirut with her BA in Computer Engineering and Sociology.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "The magic factory of Rhizomatiks",
+            "speaker": "Daito Manabe",
+            "talkImg": "",
+            "description": "Some of the elements used in works produced by Rhizhomatiks seem to be taken from a military arsenal or a sci-fi movie: drones, robotic arms and lasers. At this Japanese studio headed by Daito Manabe and Motoi Ishibashi, these technologies and more are explored to create shockingly stirring and emotional works.",
+            "start": "2018-02-09T18:10:00.000Z",
+            "end": "2018-02-09T19:00:00.000Z",
+            "bio": "Daito Manabe is one of the most renowned digital artists in the world. Programmer, creator and interactive designer, Manabe pushes the boundaries of these fields to technical and creative unexplored territories. Manabe has been awarded the Prix Ars Electronica Interactive award, several Cannes Lions, and three times the Excellence Prize in the Japan Media Arts Festival. ",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "How Our Robots Will Charm Us ",
+            "speaker": "Carla Diana",
+            "talkImg": "",
+            "description": "In this talk, product designer and design futurist Carla Diana will explore the emergence of smart objects in the home, highlighting designers’ opportunities to pioneer new territory in rich interaction, while emphasizing the importance of creating products that are meaningful and responsible. Diana will share case studies from the front lines of design and creative technology, showcasing how art, science, and business are merging to enable new product experiences.",
+            "start": "2018-02-09T19:10:00.000Z",
+            "end": "2018-02-09T20:00:00.000Z",
+            "bio": "Carla Diana is a designer, author and educator who explores the impact of future technologies through hands-on experiments in product design and tangible interaction. She has designed a range of products, from robots to connected home appliances, and is Lecturer in Smart Objects at the University of Pennsylvania.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "How to Blockchain for Artists, Labels and Fans",
+            "speaker": "Peter Harris",
+            "talkImg": "",
+            "description": "The blockchain applied to music would be something along the lines of the set of algorithms that provides the most fair and transparent system to track plays of a song and to pay the artists. Around this technology borrowed from virtual currency (bitcoin) many services have appeared. One of them, Resonate, wants also to change the hierarchy of musical distribution. This streaming platform proposes collective ownership as a business model. Instead of a corporation, the owners are the listeners themselves (artists, labels, fans) and the subscription model is changed for \"stream to own\", a system of micro-payments in which the users only pay for what they listen. This change of model guarantees transparency and equitable retributions for artists and labels.",
+            "start": "2018-02-09T20:10:00.000Z",
+            "end": "2018-02-09T21:00:00.000Z",
+            "bio": "Founder of Resonate, web developer since the 90s and part-time electronic music producer. Currently he researches and contributes to various initiatives seeking to find the standard for blockchain-based music metadata and licensing.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Business for Creative Technologists",
+            "speaker": "John Acquaviva",
+            "talkImg": "",
+            "description": "New musical instruments, innovative software tools, cloud services for mastering, distribution platforms for creators, wearables, headphones and VR applications that expand the experience of listening to music beyond the ears… Music technology is experiencing a unique moment and countless startups are changing, with their innovative projects, how we make, distribute and listen to music. In this session, John Acquaviva, artist and entrepreneur, Jon Eades, head of Abbey Road Red, and Kalam Ali, Venture Partnerships at Native Instruments, will discover the latest innovations in music technology and will reveal the keys to combine creativity, technologic development and economic viability.",
+            "start": "2018-02-09T21:10:00.000Z",
+            "end": "2018-02-09T22:00:00.000Z",
+            "bio": "John Acquaviva, renowned Canadian dj and producer. In his extensive career, he has also pushed the keys of music business running the record label Plus 8 along with his business partner and friend Richie Hawtin, and participating in the inception of projects like Final Scratch and the Beatport platform. Currently, he invests in popular projects such as Subpac, Landr and Pacemaker from his company Plus8 Equity Partners.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Hundreds of audio-artists and one composer-performer",
+            "speaker": "Francisco López",
+            "talkImg": "",
+            "description": "The audio artist Francisco López will present the results of a collective project made in two cities, The Hague (2016) and Madrid (2014), that gathered sound artists, experimental musicians, “noisists” and audio artists in general. Each of these artists contributed a sound piece to the project, a “building block” of a meta-composition/meta-performance carried out by a solitary computer on stage with no human controller. An autonomous composer-performer fed by the compositions made by more than 350 artists, executing an public Turing test. The “human-generated” compositions and the ones made by the performer computer are collected in a usb release the size of a credit card.",
+            "start": "2018-02-10T16:10:00.000Z",
+            "end": "2018-02-10T17:00:00.000Z",
+            "bio": "Francisco López is internationally recognized as one of the major figures of the sound art and experimental music scene. For almost forty years he has developed an astonishing sonic universe, absolutely personal and iconoclastic, based on a profound listening of the world. He has realized hundreds of concerts, projects with field recordings, workshops and sound installations in over seventy countries. His extensive catalog of sound pieces -with live and studio collaborations with hundreds of international artists- has been released by nearly 400 record labels / publishers worldwide. He has been awarded four times with honorary mentions at the competition of Ars Electronica Festival and is the recipient of the Qwartz Award 2010 for best sound anthology.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Creative Technologies Café",
+            "speaker": "NONOTAK studio",
+            "talkImg": "",
+            "description": "Visual artists, creators of graphic universes, interactive and immersive experiences designers, visualists… Their work defies labels and definitions. Some of the most in-demand visual artists of the moment talk about the inner workings of their pieces, unveil common (or divergent) processes and tools, and dig deep into the engines of nowadays artistic creation. This session features digital artists Tarik Barri and Alba G. Corral, and the creative studios NONOTAK and Playmodes. This talk is organized with TodaysArt, as part of the programme We Are Europe.",
+            "start": "2018-02-10T17:10:00.000Z",
+            "end": "2018-02-10T18:00:00.000Z",
+            "bio": "NONOTAK studio is the collaborative project between illustrator Noemi Schipfer and architect and musician Takami Nakamoto. Their speciality is creating immersive environments in installation and performance. NONOTAK create pieces where their talents combine: Takami Nakamoto's approach to space and sound plus Noemi Schipfer's experience with kinetic visual and complex, geometric illustrations. They have performed at Tate Britain, CTM and TodaysArt and in 2016 they were selected for Forbes’ 30 under 30 in the art and design category.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Connecting Technology and Community: The new story of De La Soul",
+            "speaker": "Brandon Hixon",
+            "talkImg": "",
+            "description": "Brandon Hixon (artist manager, De La Soul) interviewed by Molly Neuman (head of music at Kickstarter). In this conversation, Kickstarter's Head of Music Molly Neuman will interview Brandon about their approach and philosophy and how they continue to pursue innovation in their career. When legendary hip-hop group launched their Kickstarter project to fund their first album in 11 years, it was a surprise for some. But not those who had been following the group and seen their celebration of their 25th anniversary in 2014 by making their entire back catalog available for free via BitTorrent. The group, along with their manager Brandon Hixon, have embraced new technologies and platforms with savvy and creativity. ",
+            "start": "2018-02-10T18:10:00.000Z",
+            "end": "2018-02-10T19:00:00.000Z",
+            "bio": "Brandon Hixon is a music marketer & talent manager and represents De La Soul and Awkwafina. Brandon is a Webby Award Winner, and responsible for producing the largest Hip-Hop crowdfunding campaign to date. He is also the creator of the hip-hop hackathon called, “Zero Cool” which promotes diversity in technology and considered the world's most productive party.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Red Bull Music Academy presents Suzanne Ciani",
+            "speaker": "",
+            "talkImg": "",
+            "description": "A synth pioneer and adventurous electronic composer since the early ‘80s, Suzanne Ciani has defied assumptions about genre, sound design and technical knowledge ever since. Suzanne will be in conversation with Tatsuya Takahashi, one of the world’s foremost experts when it comes to analog electronics. After working as a chief engineer at Korg, developing series such as Monotron and Volca and the Minilogue, recently, synth pioneer Takahashi has taken on a new role hosting Red Bull Music Academy lectures.",
+            "start": "2018-02-10T19:10:00.000Z",
+            "end": "2018-02-10T20:00:00.000Z",
+            "bio": "A synth pioneer and adventurous electronic composer since the early ‘80s, Suzanne Ciani has defied assumptions about genre, sound design and technical knowledge ever since. Ciani’s ongoing romance with the synthesizer started with a Buchla, and her skills to create synthetic sounds made her one of the first sound designers, when the concept of sound design didn’t even exist. She is the creator of the sonic blueprint of brands like Atari, ABC and General Electric and she is proof that technology is not exclusively masculine.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Ableton presents DJ Shadow in conversation with Tony Nwachukwu",
+            "speaker": "Josh Davis (DJ Shadow)",
+            "talkImg": "",
+            "description": "The best way for Josh Davis (DJ Shadow) to celebrate the 20th anniversary of his first album “Endtroducing…” is recording a new work and researching, as he has always done, new forms of music production and projecting his sound to new territories. Ableton presents a conversation between the American producer and Tony Nwachukwu, creator of the CDR platform, where some of the most renowned London artists (from Maya Jane Coles to Floating Points) found the first opportunity to show their music.",
+            "start": "2018-02-10T20:10:00.000Z",
+            "end": "2018-02-10T21:00:00.000Z",
+            "bio": "In 1996 Josh Davis (DJ Shadow) gave life to a game-changing album developed entirely from elements and samples of other tracks, thereby reaching the summit of sampling. \"Endtroducing ...\" is a masterpiece whose recent anniversary was celebrated with a remix album by producers including Hudson Mohawke, Daedelus, Kuedo and Clams Casino ( who is also performing at Sónar 2017). The album remains a fundamental cornerstone in music from the last 25 years, the work of a remarkable creator who has never stood still for too long, constantly researching new forms of production and pushing forward his initial instrumental hip-hop sound into new territories, through works like \"The Private Press\" or \"The Outsider\".",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "URights: Online big data platform",
+            "speaker": "Caroline Champarnaud",
+            "talkImg": "",
+            "description": "URights is a copyright platform developed by IBM and La SACEM (one of the world’s largest collective management organisations). This system uses IBM’s cloud technology to capture and track the value of online music for both creators and publishers in a transparent and efficient way. Digital distribution of music and advances in the streaming market have lead to rapid growth in the amount of creative content being consumed. To handle the exponential volume of music transaction online, URights is created. URights will be presented by Caroline Champarnaud, International Development Director, Sacem and a representative of IBM.",
+            "start": "2018-02-10T21:10:00.000Z",
+            "end": "2018-02-10T22:00:00.000Z",
+            "bio": "Caroline Champarnaud is the International Development Director, Sacem and a representative of IBM.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Creative Commons for the Creative Industries",
+            "speaker": "Malcolm Bain",
+            "talkImg": "",
+            "description": "The number of user-generated audio content, such as sound effects, field recordings, musical samples and music pieces, available under Creative Commons licenses has grown significantly in the recent years. Despite there are good quality contents and they are available in online repositories, the creative industries (e.g. videogames, film and music industries) are not yet using much of all this content in their media productions. This panel represents different perspectives and specific examples that provide a vision on how Creative Commons content can be used by creative industries, create economical return for content creators and how to address specific legal aspects. This panel is a must for music and audio creators, companies and users interested in Creative Commons licenses.",
+            "start": "2018-02-11T16:10:00.000Z",
+            "end": "2018-02-11T17:00:00.000Z",
+            "bio": "Malcolm Bain is founding partner of id law partners, and he is specialized on the legal issues of open source software and content, including both developing and freeing software, establishing licensing strategies and IPR enforcement. Malcolm is member of the Free Software Foundation Europe, and Free Software Chair of the Universitat Politécnica de Catalunya.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Total Immersion: Sound and Vision in the Virtual World",
+            "speaker": "Gabo Arora",
+            "talkImg": "",
+            "description": "Come learn from some of the interesting creators working in Virtual Reality today. This event will be split into two parts: sound and vision. The Sound section will focus on sound design and scoring for VR productions. McKenzie Stubbert has composed music for over 30 VR productions including works for Chris Milk, Kathryn Bigelow and Gabo Arora. McKenzie will be joined by Executive Creative Director of Here Be Dragons, Edu Pou, who will be discussing the importance of music and sound in VR. For the Vision section we will be in conversation with Gabo Arora. Gabo has created memorable VR pieces, like projects especially his work for UNVR. Gabo will be taking us through his creative process and will be be giving guidance to those entering into the Virtual production world for the first time. Will moderate and present the session the Realities+D curator Jeremy Boxer.",
+            "start": "2018-02-11T17:10:00.000Z",
+            "end": "2018-02-11T18:00:00.000Z",
+            "bio": "Gabo Arora, creative director and founder of United Nations VR, works precisely in this field, using new technologies to fight for social causes, such as climate change and several humanitarian campaigns. He is also the creative director of LightShed a VR startup for social impact. He is the celebrated director of the first VR documentary series by the United Nations. This series takes us to the Gaza Strip in ‘My Mother’s Wing’, to a Syrian refugee camp in ‘Clouds Over Sidra’, or to Liberia during the Ebola crisis. These works have been exhibited in festivals such as Sundance or Tribeca. Gabo Arora is a 2016 World Economic Forum arts and cultural leader at Davos and is a member of the Council on Foreign Relations (CFR). ",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "On Worlds and Visitors",
+            "speaker": "Jessica Brillhart",
+            "talkImg": "",
+            "description": "In the rapidly accelerating landscape of VR, the role of a filmmaker can be a challenging one. Concepts like editing, storytelling, acting come into question when concepts like agency, presence, and immersion are introduced. Jessica Brillhart takes you on a journey through her work and experiments in this space – the failures, the successes, and the rewiring – in order to better understand what VR wants from creators. To uncover the pillars of this medium and the journey yet to come. Jessica Brillhart is the Principal Filmmaker at Google and she works closely with a team of engineers to develop the technical and narrative tools to tell stories in VR, a medium where we are visitors in virtual worlds.",
+            "start": "2018-02-11T18:10:00.000Z",
+            "end": "2018-02-11T19:00:00.000Z",
+            "bio": "Jessica Brillhart is a front-runner of VR research, focusing on the study of VR as a language for storytelling. In 2009, Brillhart began working at Google’s think tank Google Creative Lab, and became the principal filmmaker at Google VR a year ago, where she is member of the development team of Jump, a flawless 360-degree filmmaking system that could only be possible with a dialogue between the technical staff and the creative team.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "An Eye to a Virtual Future",
+            "speaker": "Jeremy Boxer",
+            "talkImg": "",
+            "description": "Virtual reality is not a gadget and it’s not a headset. It’s a developing technology that step by step is consolidating its technical part at the same time that a specific language for storytelling is created for this new medium. In VR, the frame, the keystone of audiovisual language, is not useful anymore and neither they are the film editing techniques that have been valid for more than 100 years. As Jessica Brillhart says: “technology enables art” and “art challenges technology”. Only establishing an ongoing dialog between technology (engineers, programmers…) and art (filmmakers, storytellers, artists…) this new medium can be created. Join this conversation with some of the brightest minds in the new field of virtual reality, like Google’s Jessica Brillhart, Within's Jess Engel and UNVR’s founder Gabo Arora. Will moderate the sessión the Realities+D Curator Jeremy Boxer.",
+            "start": "2018-02-11T19:10:00.000Z",
+            "end": "2018-02-11T20:00:00.000Z",
+            "bio": "Jeremy is an award-winning filmmaker and creative director based New York and London, working at the leading edge where film, technology, and art intersects. He was the Creative Director of Film & Video of Vimeo, where he led the editorial and creative strategy across all Vimeo platforms and brand partnerships. He created Vimeo On Demand and was Co-founder and Director of the Vimeo Festival & Awards. As a curator, he has been Head of Programming for Tribeca Enterprise’s Tomorrow Unlimited and Head of International Operations and Senior Programmer for the first ever global digital film festival, RESFEST. He is the curator of Sónar+D's virtual realities content. ",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Making Machines that Make",
+            "speaker": "Nadya Peek",
+            "talkImg": "",
+            "description": "Nadya Peek develops novel fabrication machines at MIT's Center for Bits and Atoms. In this talk she will outline how to move from the rapid prototyping of things to the rapid prototyping of rapid prototyping machines. Nadya develops open machine infrastructure including mechanical, electrical, and software modules which are in use for architectural production, sculpture, and at Moog Aerosystems. Expect to see crazy machines, weird workflows, and sick factory shots.",
+            "start": "2018-02-11T20:10:00.000Z",
+            "end": "2018-02-11T21:00:00.000Z",
+            "bio": "Nadya Peek is a post-doc researcher at the MIT’s Center for Bits and Atoms, a multidisciplinary department dedicated to digital fabrication. At the MIT she teaches a class called “How to Make Something that Makes (almost) anything”. She develops novel machines for advanced manufacturing and infrastructures for others to do the same, so a technology never has to be designed from scratch but from modules (control modules, software, mechanical…). She also plays in the band Construction with Marko Ahtisaari.",
+            "bioImg": "",
+            "attending": false
+
+        }, {
+            "title": "Google AI Showcase: How machine learning and artificial intelligence are changing the art of the future",
+            "speaker": "Douglas Eck",
+            "talkImg": "",
+            "description": "Google Researchers and technologists, in collaboration with artists and creators, are today at the forefront of the AI revolution. In this session, we are happy to present a exclusive showcase of the most interesting projects in Machine Intelligence for Artists and Creators coming out of Google laboratories. Google’s Artists and Machine Intelligence program brings artists and engineers together to create projects using Artificial Intelligence. Magenta is Google’s department for creating new tools that use machine learning to foster new forms of creative collaboration between humans and non-humans. Google Arts and Culture is using new technologies to explore the world of culture and cultural institutions in new dimensions.",
+            "start": "2018-02-11T21:10:00.000Z",
+            "end": "2018-02-11T22:00:00.000Z",
+            "bio": "Douglas Eck is a research scientist at Magenta using machine intelligence to generate music, video, images and text. Before starting the Magenta project, he worked on music search and recommendation at Google Play Music. In the past, he was an associate professor of Computer Science at the University of Montreal and he helped found the BRAMS center for Brain Music and Sound Research.",
+            "bioImg": "",
+            "attending": false
+
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+/*
+Vinicius Philot
+133-762-161
+for Christopher Lewis
+INM320SCC
+Jan 5, 2018
+Mobile Event Site
+*/
+
+/*mixins developed include set size, set prefizes, and set transition*/
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin prefix($prop, $val) {
+    #{$prop}: $val;
+    #{"-webkit-" + $prop}: $val;
+    #{"-ms-" + $prop}: $val;
+    #{"-o-" + $prop}: $val;
+    #{"-moz-" + $prop}: $val;
+}
+
+@mixin transition($p, $t, $d) {
+    transition: $p $t cubic-bezier(0.755, 0.05, 0.855, 0.06) $d;
+    @include prefix(transition, $p $t cubic-bezier(0.215, 0.61, 0.355, 1) $d);
+}
+
+@mixin paddingVert($val) {
+    padding: $val 0 $val 0;
+}
+
+@mixin marginHor($val) {
+    margin: 0 $val 0 $val;
+}
+@mixin marginVert($val) {
+    margin: $val 0 $val 0;
+}
+
+@mixin posFixedBottom() {
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+}

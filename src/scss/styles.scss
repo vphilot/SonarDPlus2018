@@ -50,6 +50,40 @@ body {
     outline: none;
 }
 
+#disclaimer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+  z-index: 99;
+
+  div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefix(transform, translate(-50%, -50%));
+
+     h1 {
+       font-family: $font-feat;
+       padding-bottom: 1rem;
+     }
+
+     p {
+       padding-bottom: 0.5rem;
+     }
+
+     a {
+       color: $contrast-color;
+     }
+  }
+
+
+
+}
+
 section {
     width: 100vw;
     min-height: 100vh;
@@ -167,22 +201,22 @@ canvas {
 
 div.btn-wrapper {
     padding: $default-spacing $default-spacing 0 $default-spacing;
-    
+
     & > .btn-day, & > .btn-filter{
     font-size: $subtitle;
     padding: 0.5em;
     margin: 0 1em 0.5em 0em;
     display: inline-block;
     }
-    
+
     & > .btn-day {
     text-transform: uppercase;
     }
-    
+
     & > .btn-day.active, & > .btn-filter.active {
     text-decoration: underline;
     }
-    
+
     & svg {
         padding-right:5px;
     }
@@ -191,7 +225,7 @@ div.btn-wrapper {
 div.talks-wrapper {
     padding: 0 $default-spacing 0 $default-spacing;
     margin-bottom: 10vh;
-    
+
     & > p.error {
         margin-top: $default-spacing;
         width: 70vw;
@@ -200,14 +234,14 @@ div.talks-wrapper {
 }
 
 div.talk {
-    
+
     color: $contrast-color;
     @include paddingVert(1em);
     position: relative;
     opacity: 0;
     margin-top: 5vh;
     @include transition(all, 0.5s, 0s);
-    
+
     & > h1 {
         font-weight: 900;
         font-size: $title*1.25;
@@ -235,11 +269,11 @@ div.talk {
     & > p {
         display: none;
     }
-    
+
     & > img {
         display: none;
     }
-    
+
     &::before { /*creating the border */
         content: "";
         border-bottom: 0.03em solid $contrast-color;
@@ -304,15 +338,15 @@ div.talk-detail, div.speaker-detail{
     display: none;
     overflow: scroll;
     @include prefix(animation, pop-detail .5s ease-in-out);
-    
+
     &.active {
         display: block;
     }
-    
+
     & > *{
         margin-bottom: 0.5em;
     }
-    
+
     & > h1 {
         width: 60vw;
         font-weight: 900;
@@ -326,7 +360,7 @@ div.talk-detail, div.speaker-detail{
         color: $contrast-color;
         @include prefix (text-shadow, 8px 0 3em rgba(0, 0, 0, 1));
     }
-    
+
     & > h2 {
         padding-top: 0.5em;
         font-weight: 700;
@@ -345,15 +379,15 @@ div.talk-detail, div.speaker-detail{
         font-size: $body;
         text-align: justify;
     }
-    
+
     & > img {
         @include size (100%,70vh);
         display: block;
         border-radius: 1em;
         object-fit: cover;
         @include prefix (filter, brightness(90%));
-    } 
-    
+    }
+
     & > button.btn-talk-back {
         color: $contrast-color;
         position: absolute;
@@ -363,13 +397,13 @@ div.talk-detail, div.speaker-detail{
          shadow does not work with svgs from font awesome*/
         right: 15%;
         font-size: $title*1.5;
-    }   
+    }
 }
 
 @keyframes pop-detail {
   0% {
     opacity: 0;
-  }  
+  }
 
   100% {
     opacity: 1;
@@ -405,7 +439,7 @@ div.speaker {
         font-size: $header*1.3;
         /*change opacity of odd elements to give variety*/
     }
-    
+
     &:first-child > h1 {
         font-size: $header*2.5;
     }
@@ -430,14 +464,14 @@ div.speaker {
 /* TABLET-SPECIFIC BREAKPOINT*/
 
 @media only screen and (min-width: $bp-sm) and (max-width: $bp-tb)  {
-       
+
     nav#main-nav {
         & a {
             line-height: 6vh;
             font-size: $body;
         }
     }
-    
+
     #home {
         & div.logo-wrapper {
             position: inherit;
@@ -469,7 +503,7 @@ div.speaker {
         }
     }
     div.btn-wrapper {
-        
+
         & > .btn-day, & > .btn-filter{
         font-size: $subtitle*1.15;
         padding: 0.8em;
@@ -524,7 +558,7 @@ div.speaker {
     }
 
     div.talk-detail, div.speaker-detail{
-       
+
 
         & > h1 {
             font-size: $header*2;
@@ -533,7 +567,7 @@ div.speaker {
         & > h2 {
             font-size: $title*1.2;
             margin-bottom: 0.35em;
-            
+
         }
         & > h5 {
             font-size: $title;
@@ -549,21 +583,21 @@ div.speaker {
         & > img {
             @include size (100%,50vh);
 
-        } 
+        }
 
         & > button.btn-talk-back {
             top: 10vh;
             font-size: $title*2;
         }
-        
+
         & > button.btn-attending {
             position: relative;
             display: block;
             transform: translate(0,50%)
         }
     }
-    
-    
+
+
     div.speaker {
     display: inline-block;
         & h1 {
@@ -585,7 +619,3 @@ div.speaker {
         }
     }
 }
-
-
-
-

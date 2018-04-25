@@ -14,9 +14,6 @@ let attendTxt = "attend";
 
 
 window.addEventListener("load", initComp);
-window.addEventListener('resize', function(e) {
-  location.reload();
-});
 
 function initComp(evt) {
 

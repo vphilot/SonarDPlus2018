@@ -6,7 +6,7 @@
     "scripts": {
         "start": "concurrent \"npm run sass\" \"npm run lite\"",
         "lite": "lite-server",
-        "sass": "node-sass --watch --output-style compressed -o dist/css src/scss"
+        "sass": "sass --watch src/scss:dist/css --style=compressed"
     },
     "author": "Vinicius Philot",
     "license": "ISC",
@@ -17,6 +17,6 @@
     "devDependencies": {
         "concurrently": "^3.5.1",
         "lite-server": "^2.3.0",
-        "node-sass": "^4.7.2"
+        "sass": "^1.69.5"
     }
 }
